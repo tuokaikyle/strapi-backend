@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cities",
+  "info": {
+    "name": "City",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 10
+    },
+    "Rating": {
+      "type": "integer",
+      "required": true,
+      "max": 10,
+      "min": 0
+    }
+  }
+}
